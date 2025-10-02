@@ -17,9 +17,18 @@ Descargar la imagen **hello-world**
 # COMPLETAR
 
 **¿Qué es nginx**
+
+Es un servidor web/proxy inverso de código abierto y alto rendimiento, conocido por su eficiencia y bajo consumo de recursos, especialmente al manejar muchas conexiones concurrentes.
+
 # COMPLETAR 
 
 Descargar la imagen  **nginx** en la versión **alpine**
+
+```
+docker pull nginx:alpine
+```
+
+
 # COMPLETAR
 
 ### Listar imágenes
@@ -27,6 +36,9 @@ Descargar la imagen  **nginx** en la versión **alpine**
 ```
 docker images
 ```
+<img width="517" height="81" alt="image" src="https://github.com/user-attachments/assets/b39dd182-37cb-4304-9e3a-aec300bd0013" />
+
+
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
 
@@ -43,9 +55,15 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
+
+<img width="1055" height="840" alt="image" src="https://github.com/user-attachments/assets/f9b8c90c-3844-41e2-81a7-36b0a13aea73" />
+
 # COMPLETAR
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
+
+sha256
+
 # COMPLETAR
 
 ### Filtrar imágenes
@@ -54,6 +72,8 @@ Inspeccionar la imagen hello-world
 docker images | grep <termino a buscar>
 
 ```
+<img width="484" height="48" alt="image" src="https://github.com/user-attachments/assets/b43005f0-41f3-46d5-b2e7-d2fe46c92f78" />
+
 
 ### Para eliminar una imagen
 Eliminar permanentemente la imagen de tu sistema Docker.
@@ -74,3 +94,4 @@ Es una buena práctica detener y eliminar todos los contenedores que dependan de
 ```
 docker rmi -f <nombre imagen>:<tag>
 ```
+<img width="756" height="237" alt="image" src="https://github.com/user-attachments/assets/e5b41a21-c4d0-4c9f-805d-5ea7fee469b1" />
